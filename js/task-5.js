@@ -9,8 +9,13 @@ function getRandomHexColor() {
 // задає це значення кольору текстовим вмістом для span.color.
 const buttonClick = document.querySelector('.change-color');
 const spanEl = document.querySelector('.color');
-buttonClick.addEventListener('click', handlClick);
-spanEl.addEventListener('click', handlClick);
+const bodyEl = document.querySelector('body');
+bodyEl.addEventListener('click', handlClick);
+
 function handlClick(event) {
-  event.target.style.backgroundColor = getRandomHexColor();
+  if (event.target === buttonClick) {
+    const color = getRandomHexColor();
+    bodyEl.style.backgroundColor = color;
+    spanEl.textContent = color;
+  }
 }
