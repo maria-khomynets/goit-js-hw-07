@@ -10,7 +10,7 @@ function getRandomHexColor() {
 const buttonClick = document.querySelector('.change-color');
 const spanEl = document.querySelector('.color');
 const bodyEl = document.querySelector('body');
-bodyEl.addEventListener('click', handlClick);
+buttonClick.addEventListener('click', handlClick);
 
 function handlClick(event) {
   if (event.target === buttonClick) {
