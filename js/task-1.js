@@ -3,7 +3,7 @@
 //і кількість елементів у категорії(усіх < li >, вкладених у нього).
 
 const categoryItems = document.querySelectorAll('.item');
-console.log(categoryItems);
+
 const categories = categoryItems.length;
 console.log(`Number of categories: ${categories}`);
 
