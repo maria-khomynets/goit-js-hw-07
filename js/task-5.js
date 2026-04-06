@@ -18,5 +18,4 @@ function handlClick(event) {
     bodyEl.style.backgroundColor = color;
     spanEl.textContent = color;
   }
-  console;
 }
