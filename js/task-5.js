@@ -19,3 +19,4 @@ function handlClick(event) {
     spanEl.textContent = color;
   }
 }
+console;
